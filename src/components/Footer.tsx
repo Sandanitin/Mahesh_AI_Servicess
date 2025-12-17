@@ -20,7 +20,6 @@ export function Footer() {
         legal: [
             { name: 'Privacy Policy', href: '#' },
             { name: 'Terms of Service', href: '#' },
-            { name: 'Cookie Policy', href: '#' },
         ],
     }
 
@@ -111,8 +110,16 @@ export function Footer() {
                 {/* Bottom Bar */}
                 <div className="mt-12 pt-8 border-t border-border">
                     <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-                        <p className="text-sm text-muted-foreground">
-                            © {currentYear} Sample AI Services. All rights reserved.
+                        <p className="text-sm text-muted-foreground text-center md:text-left">
+                            © {currentYear} Sample AI Services. All rights reserved. | Designed and developed by{' '}
+                            <a
+                                href="https://www.vikrin.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-primary hover:underline"
+                            >
+                                Vikrin
+                            </a>
                         </p>
                         <div className="flex space-x-6">
                             {footerLinks.legal.map((link) => (
