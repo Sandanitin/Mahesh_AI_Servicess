@@ -1,10 +1,31 @@
 import { motion } from 'framer-motion'
-import { TrendingUp, Headphones, Megaphone, ShoppingCart, Check, ArrowRight } from 'lucide-react'
+import { TrendingUp, Headphones, Megaphone, ShoppingCart, Handshake, Check, ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Link } from 'react-router-dom'
 
 export function Services() {
     const services = [
+        {
+            id: 'consulting',
+            icon: Handshake,
+            title: 'Consulting',
+            subtitle: 'Compliance & Strategy Excellence',
+            description: 'A company requires to be compliant when it uses any software, program or device. If the company fails in establishing the right standards, it can lead to regulatory penalties, security breaches, and operational inefficiencies. Our consulting services help you navigate the complex landscape of compliance and technology governance.',
+            features: [
+                'Software compliance audits and assessments',
+                'Regulatory framework implementation',
+                'IT governance and policy development',
+                'Risk management and mitigation strategies',
+                'Technology standards and best practices',
+                'Continuous compliance monitoring solutions',
+            ],
+            benefits: [
+                '100% regulatory compliance assurance',
+                '50% reduction in compliance-related risks',
+                'Streamlined audit processes',
+            ],
+            color: 'from-amber-500 to-orange-500',
+        },
         {
             id: 'sales',
             icon: TrendingUp,
